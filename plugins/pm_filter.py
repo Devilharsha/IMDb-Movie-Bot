@@ -116,8 +116,8 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("⭕️ Movie", url="https://t.me/+26XbUS8O3cM1MDU1"),
-                InlineKeyboardButton("Series ⭕️", url="https://t.me/+VWYQKLaIim4yNjk1")
+                InlineKeyboardButton("⭕️ cartoons", url="https://t.me/HC_CARTOONS_TELUGU_OFFICIAL"),
+                InlineKeyboardButton("cartoon request ⭕️", url="https://t.me/HC_CARTOONS_DISSCUSSION_GROUP")
             ])
 
     btn.insert(0, [
@@ -436,11 +436,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('⭕️ Support', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('Channel ⭕️', url='https://t.me/JosProjects')
+                InlineKeyboardButton('⭕️ Support', url='https://t.me/HC_CARTOONS_DISSCUSSION_GROUP'),
+                InlineKeyboardButton('Channel ⭕️', url='https://t.me/HC_CARTOONS_TELUGU_OFFICIAL')
             ],
             [
-                InlineKeyboardButton('🎬 Series & Movie Club 🎬', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('🎬 devloper 🎬', url=f'https://t.me/MXNITRO')
             ]
             ]
         await query.answer()
@@ -462,8 +462,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🕵️ Search here Movie 🕵️', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('⭕️ Updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('Movie Club ⭕️', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('⭕️ Updates', url='https://t.me/HC_CARTOONS_TELUGU_OFFICIAL'),
+            InlineKeyboardButton('support ⭕️', url='https://t.me/HC_CARTOONS_DISSCUSSION_GROUP')
             ],[
             InlineKeyboardButton('❌ Close the Menu ❌', callback_data='close_data')
         ]]
@@ -503,7 +503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Adult Bot 🔞', url='https://t.me/AdultSearchXBot')
+            InlineKeyboardButton('devoloper', url='https://t.me/Mxnitro')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -513,8 +513,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('⭕ Status', url='https://t.me/josprojects/221'),
-            InlineKeyboardButton('Source 🪤', callback_data='source')
+            InlineKeyboardButton('⭕ updates', url='https://t.me/https://t.me/HC_CARTOONS_TELUGU_OFFICIAL'),
+            InlineKeyboardButton('Support 💗',  url='https://t.me/HC_CARTOONS_DISSCUSSION_GROUP'),
             ],[
             InlineKeyboardButton('❓ How to Use ❓', callback_data='help')
             ],[
@@ -938,11 +938,11 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton("⭕️ Movie", url="https://t.me/+26XbUS8O3cM1MDU1"),
-        InlineKeyboardButton("Series ⭕️", url="https://t.me/+VWYQKLaIim4yNjk1")
+        InlineKeyboardButton("💓 DEVELOPER", url="https://t.me/MXNITRO"),
+        InlineKeyboardButton("Support 💖",   url="https://t.me/HC_CARTOONS_DISSCUSSION_GROUP")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("⭕️ Join Our Channel ⭕️",url="https://t.me/imdbprobots/4")
+        InlineKeyboardButton("💖 Join Our Channel 💖",url="https://t.me/HC_CARTOONS_TELUGU_OFFICIAL")
     ])
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
